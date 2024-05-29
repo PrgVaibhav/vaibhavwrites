@@ -24,9 +24,7 @@ const socialLinks = [
 export const HeroSection = () => {
   return (
     <section className="w-full md:w-10/12  m-auto mt-4 p-4">
-      <h1 className="text-2xl md:text-3xl mb-2 heading">
-        Hi, I'm Vaibhav Kumar,
-      </h1>
+      <h1 className="text-2xl md:text-3xl mb-2 heading">Hi, I'm Vaibhav,</h1>
       <div className="">
         <p className="para mb-2 text-md ">
           A passionate React developer specializing in creating responsive and
@@ -36,9 +34,11 @@ export const HeroSection = () => {
           with me for collaborations or inquiries.
         </p>
         <p className="para  mb-2 text-md ">
-          Through this platform, I aim to document my journey in web
-          development, share insights and tutorials, and provide valuable
-          resources for other developers. Let's grow and innovate together!
+          This blog is all about my web development journey mixed with life’s
+          fun moments and random musings. Think of it as a friendly neighbor
+          chat with a tech twist. I’ll share developer tips, personal tales, and
+          use some AI for writing help. Join me for a mix of learning, fun, and
+          tech adventures!
         </p>
       </div>
       <div className="socials flex gap-4 mt-4 flex-wrap">

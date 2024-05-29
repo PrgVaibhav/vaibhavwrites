@@ -5,7 +5,7 @@ export const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="h-screen">
+      <main className="h-full w-full">
         <Outlet />
       </main>
       <Footer />

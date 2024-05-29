@@ -1,8 +1,9 @@
+import { Section } from "../../ui/Section";
 import { BlogsCard } from "./BlogsCard";
 
 export const BlogsContainer = () => {
   return (
-    <section className="w-full md:w-10/12 m-auto mt-4 p-4">
+    <Section label="Recent Blogs Section.">
       <div className="heading">
         <h1 className="text-2xl md:text-3xl">Recent Blogs.</h1>
       </div>
@@ -11,8 +12,7 @@ export const BlogsContainer = () => {
         <BlogsCard />
         <BlogsCard />
         <BlogsCard />
-        <BlogsCard />
       </div>
-    </section>
+    </Section>
   );
 };
