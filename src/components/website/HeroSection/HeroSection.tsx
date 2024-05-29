@@ -49,6 +49,7 @@ export const HeroSection = () => {
             target="_blank"
             rel="noreferrer"
             className="flex"
+            aria-label={link.text}
           >
             {link.icon}/
             <span
