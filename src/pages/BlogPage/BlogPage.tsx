@@ -1,4 +1,5 @@
 import { Section } from "../../components/ui/Section";
+import { useTitle } from "../../hooks/useTitle";
 
 const para = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates, quod, natus, quae, repellendus quia dolorum voluptas voluptate quos quibusdam tempora. Quisquam voluptates, quod, natus, quae, repellendus quia dolorum voluptas voluptate quos quibusdam tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ratione repudiandae. Libero atque nam esse excepturi? Totam  dolorem consectetur assumenda dolorum eaque iure deserunt sunt, incidunt  similique, recusandae error facere libero.",
@@ -9,6 +10,7 @@ const para = [
 ];
 
 export const BlogPage = () => {
+  useTitle({ title: "Blog Page" });
   return (
     <Section label="BlogPage Section.">
       <div className="flex flex-col gap-4">
@@ -16,7 +18,7 @@ export const BlogPage = () => {
           <img
             src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFpJTIwYmxvZ3xlbnwwfHwwfHx8MA%3D%3D"
             alt="blog-image"
-            className="w-screen h-60 object-cover rounded-lg shadow-md "
+            className="w-screen h-60 object-cover rounded-lg shadow-md"
           />
         </div>
         <div className="blog-heading">
@@ -32,13 +34,13 @@ export const BlogPage = () => {
             By Vaibhav Kumar on 12th August 2021
           </span>
         </div>
-        <div className="blog-content flex flex-col gap-3">
+        <article className="blog-content flex flex-col gap-3">
           {para.map((p, index) => (
             <p className="para" key={index}>
               {p}
             </p>
           ))}
-        </div>
+        </article>
       </div>
     </Section>
   );

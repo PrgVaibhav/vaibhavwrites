@@ -69,3 +69,19 @@ header .logo {
     background: var(--dark-gray);
     color: var(--light-gray);
 }
+
+.btn {
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, .6);
+    border: 1px solid var(--muted-gray);
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, .6);
+    transform: scale(.97);
+}
+
+.btn:active {
+    transform: scale(.95);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, .6);
+}

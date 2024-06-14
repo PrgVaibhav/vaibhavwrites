@@ -8,6 +8,7 @@ export const Routes = () => {
     {
       element: <RootLayout />,
       errorElement: <h1>404 Not Found</h1>,
+
       children: [
         { path: "/", element: <HomePage /> },
         { path: "blog/:id", element: <BlogPage /> },
